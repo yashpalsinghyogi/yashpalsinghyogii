@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fav.jpeg" type="image/png">
+    <title>Master-yashpal singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #D2B48C 0%, #FFB6C1 100%);
+            color: #4B3D2A;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: rgba(255, 182, 193, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4B3D2A;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ppt-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 600px;
+            border: 5px solid #D2B48C;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #FFF;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            background-color: rgba(210, 180, 140, 0.8);
+            padding: 10px;
+            text-align: center;
+            color: #4B3D2A;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .ppt-container {
+                height: 400px;
+                margin: 10px;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .ppt-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Home">
+                <span class="logo-text">Wait for 10sec</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="gallery.html" class="nav-link" role="menuitem">Gallery</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Royal Presentation</h1>
+    </header>
+    <main>
+        <div class="ppt-container">
+            <!-- Replace 'path/to/your/presentation.pptx' with the actual path or URL to your PPT file. 
+                 Note: Direct embedding of .pptx files in HTML may not work in all browsers. 
+                 For better compatibility, consider converting to PDF or using a service like Google Drive to embed as a viewer. -->
+            <iframe src="https://1drv.ms/p/c/1b9ed4acaa735f0a/IQQ2xBEkA_G6TptyoToaXDq2ASMtdoWblhwxCm_Gh2rbrpI?wdAr=1.3333333333333333&amp;wdEaaCheck=1" width="676px" height="381px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </div>
+    </main>
+   <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Master Yashpal</h3>
+                    <p class="footer-tagline">Premium Yoga Instruction</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navigate</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p>Delhi, India</p>
+                    <p><a href="mailto:yashpalsinghntc@gmail.com">yashpalsinghntc@gmail.com</a></p>
+                    <p><a href="tel:+917011476945">+91 7011476945</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Master Yashpal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+</html>

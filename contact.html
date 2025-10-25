@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Master Ananya for premium yoga instruction and wellness consultations">
+    <link rel="icon" href="fav.jpeg" type="image/png">
+    <title>Contact - Master Yashpal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+       <style>
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio; adjust as needed (e.g., 75% for 4:3) */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Home">
+                <span class="logo-text">Master Yashpal</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="gallery.html" class="nav-link" role="menuitem">Gallery</a></li>
+                <li role="none"><a href="contact.html" class="nav-link active" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Get in Touch</h1>
+            <p class="page-subtitle fade-in-delay">Begin your transformation journey today</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send a Message</h2>
+                    <div class="title-underline"></div>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form" class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="hidden" name="access_key" value="77920052-ff43-4a2b-8fda-4cbe8a6ba40a">
+                            <input type="text" id="name" name="name" class="form-input" required 
+                                   aria-required="true" placeholder="Enter your full name">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required 
+                                   aria-required="true" placeholder="your@email.com">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" 
+                                   placeholder="+91 98765 43210">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Interested In *</label>
+                            <select id="service" name="service" class="form-input" required aria-required="true">
+                            <option value="select">consultation</option>
+                            
+                            </select>
+                            <span class="form-error" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" 
+                                      rows="5" required aria-required="true" 
+                                      placeholder="Tell us about your wellness goals and any specific requirements..."></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <p>✓ Thank you for your message! We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="title-underline"></div>
+                    
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div class="contact-details">
+                                <h3 class="contact-info-title">Location</h3>
+                                <p>NEWDELHI, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div class="contact-details">
+                                <h3 class="contact-info-title">Email</h3>
+                                <p><a class="__cf_email__" href="mailto:yashpalsinghntc@gmail.com">yashpalsinghntc@gmail.com</a></p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">📱</div>
+                            <div class="contact-details">
+                                <h3 class="contact-info-title">Phone</h3>
+                                <p><a href="tel:+917011476945">+91 7011476945</a></p>
+                                <p class="contact-hours">Mon-Sat: 7:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon" aria-hidden="true">🌐</div>
+                            <div class="contact-details">
+                                <h3 class="contact-info-title">Follow Us</h3>
+                                <div class="social-links">
+                                    <a href="https://www.instagram.com/yashpalsinghyogi?igsh=a25pamN4cDhka29y" target="_blank" aria-label="Instagram" class="social-link">Instagram</a>
+                                    <a href="https://m.facebook.com/yashpalsinghntc/" aria-label="Facebook" target="_blank" class="social-link">Facebook</a>
+                                    <a href="https://youtube.com/@yashpalsinghyogi2618?si=wZfnWSP4vNbrL6IE" target="_blank" aria-label="LinkedIn" class="social-link">Youtube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-note">
+                        <p><strong>Note:</strong> Strict action will be taken against immoral or spam emails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4786.410675261539!2d77.13573419203743!3d28.68842840510635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c8e6899ec5%3A0x31f69f0e3daac287!2sSt.%20Columbo%20Public%20School!5e0!3m2!1sen!2sin!4v1761233600912!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+<footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Master Yashpal</h3>
+                    <p class="footer-tagline">Premium Yoga Instruction</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navigate</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p>Delhi, India</p>
+                    <p><a href="mailto:yashpalsinghntc@gmail.com">yashpalsinghntc@gmail.com</a></p>
+                    <p><a href="tel:+917011476945">+91 7011476945</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Master Yashpal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>
