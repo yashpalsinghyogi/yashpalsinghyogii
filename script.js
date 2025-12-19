@@ -64,10 +64,7 @@ function initGallery() {
             src: 'g2.jpeg',
             caption: 'Click For Immersive Experience'
         },
-        {
-            src: 'g3.jpeg',
-            caption: 'Click For Immersive Experience'
-        },
+        
         {
             src: 'g4.jpeg',
             caption: 'Click For Immersive Experience'
@@ -623,4 +620,5 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.boxShadow = '0 2px 8px rgba(74, 20, 140, 0.1)';
     }
+
 });
