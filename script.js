@@ -145,10 +145,7 @@ function initGallery() {
             src: 'g23.jpeg',
             caption: 'Click For Immersive Experience'
         },
-                {
-            src: 'g24.jpeg',
-            caption: 'Click For Immersive Experience'
-        },
+            
         
         {
             src: 'g25.jpeg',
@@ -180,14 +177,6 @@ function initGallery() {
         },
         {
             src: 'g32.jpeg',
-            caption: 'Click For Immersive Experience'
-        },
-        {
-            src: 'g33.jpeg',
-            caption: 'Click For Immersive Experience'
-        },
-        {
-            src: 'g34.jpeg',
             caption: 'Click For Immersive Experience'
         },
         {
@@ -622,3 +611,4 @@ window.addEventListener('scroll', () => {
     }
 
 });
+
